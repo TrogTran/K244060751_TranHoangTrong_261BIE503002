@@ -1,0 +1,34 @@
+[
+    {
+        "username": "admin",
+        "hoten": "Trần Hoàng Trọng",
+        "email": "trong.k244060751@st.uel.edu.vn",
+        "role": "admin",
+        "trangthai": "hoatdong",
+        "ngaytao": "2026-01-01T00:00:00"
+    },
+    {
+        "username": "moderator01",
+        "hoten": "Nguyễn Văn Hùng",
+        "email": "hung.nv@mystore.vn",
+        "role": "admin",
+        "trangthai": "hoatdong",
+        "ngaytao": "2026-01-10T09:20:00"
+    },
+    {
+        "username": "customer_mai",
+        "hoten": "Nguyễn Thị Mai",
+        "email": "mai.nguyen@example.com",
+        "role": "user",
+        "trangthai": "hoatdong",
+        "ngaytao": "2026-02-20T10:15:00"
+    },
+    {
+        "username": "customer_long",
+        "hoten": "Lê Hoàng Long",
+        "email": "long.le@example.com",
+        "role": "user",
+        "trangthai": "hoatdong",
+        "ngaytao": "2026-03-05T14:45:00"
+    }
+]

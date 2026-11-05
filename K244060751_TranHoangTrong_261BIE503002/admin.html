@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ Thống Quản Trị Đơn Hàng & Khách Hàng - K244060751 Trần Hoàng Trọng - K24406</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- HEADER & NAVBAR ADMIN -->
+    <header>
+        <div class="header-top">
+            <a href="admin.html" class="brand-logo">
+                <span>⚙️</span> MYSTORE ADMIN PANEL
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Về Trang Bán Hàng</a></li>
+                    <li><a href="#ordersSection" class="active">Quản Lý Đơn Hàng</a></li>
+                    <li><a href="#customersSection">Danh Sách Khách Hàng</a></li>
+                    <li><button id="btnAdminLogout" class="btn-logout">Đăng xuất</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div style="max-width: 1280px; margin: 24px auto; padding: 0 16px;">
+
+        <!-- CÂU 8: DASHBOARD THỐNG KÊ (3 Ô CHỈ SỐ QUAN TRỌNG) -->
+        <section class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon">📦</div>
+                <div class="stat-info">
+                    <div class="stat-label">Tổng số đơn hàng</div>
+                    <div class="stat-value" id="statTotalOrders">0</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">💰</div>
+                <div class="stat-info">
+                    <div class="stat-label">Tổng doanh thu bán hàng</div>
+                    <div class="stat-value" id="statTotalRevenue">$0.00</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🛍️</div>
+                <div class="stat-info">
+                    <div class="stat-label">Tổng sản phẩm đã bán</div>
+                    <div class="stat-value" id="statTotalProductsSold">0</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BẢNG DANH SÁCH ĐƠN HÀNG (LOCALSTORAGE & CARTS.XML) -->
+        <section id="ordersSection" class="admin-table-wrap">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 16px;">
+                <h2 style="color:#1a237e; font-size: 20px;">📦 Quản Lý Danh Sách Đơn Hàng</h2>
+                <span id="orderCount" style="font-size: 14px; color:#666;">Đang tải...</span>
+            </div>
+            <table class="admin-table">
+                <thead>
+                    <tr>
+                        <th>Mã Đơn Hàng</th>
+                        <th>Ngày Đặt</th>
+                        <th>Khách Hàng</th>
+                        <th>Thông Tin Liên Hệ</th>
+                        <th>Số Mặt Hàng</th>
+                        <th>Tổng Giá Trị</th>
+                        <th>Hành Động</th>
+                    </tr>
+                </thead>
+                <tbody id="tbodyOrders">
+                    <tr><td colspan="7" style="text-align:center; padding: 20px;">Đang tải dữ liệu đơn hàng...</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- BẢNG DANH SÁCH KHÁCH HÀNG (CUSTOMERS.JSON) -->
+        <section id="customersSection" class="admin-table-wrap" style="margin-top: 30px;">
+            <div style="margin-bottom: 16px;">
+                <h2 style="color:#1a237e; font-size: 20px;">👥 Quản Lý Khách Hàng & Phân Quyền</h2>
+                <small style="color:#666;">Dữ liệu đọc trực tiếp từ customers.json</small>
+            </div>
+            <table class="admin-table">
+                <thead>
+                    <tr>
+                        <th>Mã KH</th>
+                        <th>Họ và Tên</th>
+                        <th>Email</th>
+                        <th>Số Điện Thoại</th>
+                        <th>Địa Chỉ</th>
+                        <th>Vai Trò (Role)</th>
+                        <th>Ngày Tạo</th>
+                    </tr>
+                </thead>
+                <tbody id="tbodyCustomers">
+                    <tr><td colspan="7" style="text-align:center; padding: 20px;">Đang tải dữ liệu khách hàng...</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+    </div>
+
+    <!-- MODAL CHI TIẾT ĐƠN HÀNG (HÓA ĐƠN) -->
+    <div class="modal-overlay" id="orderDetailModal">
+        <div class="modal-content" style="max-width: 700px;">
+            <div class="modal-header">
+                <span class="modal-title" id="orderDetailTitle">Chi Tiết Hóa Đơn</span>
+                <button class="btn-close-modal" aria-label="Đóng">&times;</button>
+            </div>
+            <div class="modal-body" id="orderDetailBody">
+                <!-- Nội dung hóa đơn -->
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER Ở TẤT CẢ CÁC TRANG (CHÍNH XÁC THEO YÊU CẦU ĐỀ BÀI) -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>VỀ CHÚNG TÔI</h4>
+                <p><b>Hệ thống Bán Hàng Trực Tuyến MyStore (Admin Portal)</b></p>
+                <p><b>Địa chỉ:</b> 280 An Dương Vương, Phường 4, Quận 5, TP. Hồ Chí Minh</p>
+                <p><b>Hotline:</b> 1900 6868 - (028) 3835 4409</p>
+            </div>
+            <div class="footer-col">
+                <h4>THÔNG TIN SINH VIÊN & BÀI THI</h4>
+                <p><b>Sinh viên thực hiện:</b> Trần Hoàng Trọng - MSSV: K244060751 - Lớp: K24406 - Mã đề: BW08</p>
+                <p><b>Môn học:</b> Phát triển Web Kinh Doanh</p>
+            </div>
+            <div class="footer-col">
+                <h4>TIỆN ÍCH THỜI TIẾT TRỰC TUYẾN</h4>
+                <div class="weather-widget" id="weatherWidgetAdmin">
+                    Đang nạp dữ liệu thời tiết Hà Nội...
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            Sinh viên thực hiện: Trần Hoàng Trọng - MSSV: K244060751 - Lớp: K24406 - Mã đề: BW08
+        </div>
+    </footer>
+
+    <!-- SCRIPT ADMIN -->
+    <script src="js/admin.js"></script>
+</body>
+</html>

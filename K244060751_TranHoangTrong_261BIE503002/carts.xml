@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<carts>
+    <hoadon>
+        <mahd>HD20261105001</mahd>
+        <ngaytao>2026-11-05T08:30:00</ngaytao>
+        <tenkhachhang>Trần Hoàng Trọng</tenkhachhang>
+        <email>trong.k244060751@st.uel.edu.vn</email>
+        <sdt>0912345678</sdt>
+        <nhanvien>Admin Trần Hoàng Trọng</nhanvien>
+        <tongtien>132.25</tongtien>
+        <chitiethoadon>
+            <sanpham>
+                <masp>1</masp>
+                <tensp>Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</tensp>
+                <dongia>109.95</dongia>
+                <soluong>1</soluong>
+                <thanhtien>109.95</thanhtien>
+            </sanpham>
+            <sanpham>
+                <masp>2</masp>
+                <tensp>Mens Casual Premium Slim Fit T-Shirts</tensp>
+                <dongia>22.3</dongia>
+                <soluong>1</soluong>
+                <thanhtien>22.3</thanhtien>
+            </sanpham>
+        </chitiethoadon>
+    </hoadon>
+    <hoadon>
+        <mahd>HD20261105002</mahd>
+        <ngaytao>2026-11-05T10:15:00</ngaytao>
+        <tenkhachhang>Lê Hoàng Long</tenkhachhang>
+        <email>long.le@example.com</email>
+        <sdt>0903123456</sdt>
+        <nhanvien>Admin Trần Hoàng Trọng</nhanvien>
+        <tongtien>695.0</tongtien>
+        <chitiethoadon>
+            <sanpham>
+                <masp>5</masp>
+                <tensp>John Hardy Women's Legends Naga Gold and Silver Dragon Station Chain Bracelet</tensp>
+                <dongia>695.0</dongia>
+                <soluong>1</soluong>
+                <thanhtien>695.0</thanhtien>
+            </sanpham>
+        </chitiethoadon>
+    </hoadon>
+</carts>

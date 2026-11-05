@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+    <product>
+        <id>1</id>
+        <title>Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</title>
+        <price>109.95</price>
+        <description>Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday</description>
+        <category>men's clothing</category>
+        <image>https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg</image>
+        <mausac>Xanh rêu phối nâu</mausac>
+        <tonkho>45</tonkho>
+        <rating>
+            <rate>3.9</rate>
+            <count>120</count>
+        </rating>
+    </product>
+    <product>
+        <id>2</id>
+        <title>Mens Casual Premium Slim Fit T-Shirts</title>
+        <price>22.3</price>
+        <description>Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight and soft fabric for breathable and comfortable wearing.</description>
+        <category>men's clothing</category>
+        <image>https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg</image>
+        <mausac>Trắng phối đen</mausac>
+        <tonkho>120</tonkho>
+        <rating>
+            <rate>4.1</rate>
+            <count>259</count>
+        </rating>
+    </product>
+    <product>
+        <id>3</id>
+        <title>Mens Cotton Jacket</title>
+        <price>55.99</price>
+        <description>Great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors.</description>
+        <category>men's clothing</category>
+        <image>https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg</image>
+        <mausac>Nâu kaki</mausac>
+        <tonkho>35</tonkho>
+        <rating>
+            <rate>4.7</rate>
+            <count>500</count>
+        </rating>
+    </product>
+    <product>
+        <id>4</id>
+        <title>Mens Casual Slim Fit</title>
+        <price>15.99</price>
+        <description>The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.</description>
+        <category>men's clothing</category>
+        <image>https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg</image>
+        <mausac>Xanh navy</mausac>
+        <tonkho>80</tonkho>
+        <rating>
+            <rate>2.1</rate>
+            <count>430</count>
+        </rating>
+    </product>
+    <product>
+        <id>5</id>
+        <title>John Hardy Women's Legends Naga Gold and Silver Dragon Station Chain Bracelet</title>
+        <price>695.0</price>
+        <description>From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.</description>
+        <category>jewelery</category>
+        <image>https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg</image>
+        <mausac>Bạc phối vàng 18K</mausac>
+        <tonkho>15</tonkho>
+        <rating>
+            <rate>4.6</rate>
+            <count>400</count>
+        </rating>
+    </product>
+    <product>
+        <id>6</id>
+        <title>Solid Gold Petite Micropave</title>
+        <price>168.0</price>
+        <description>Satisfaction Guaranteed. Return or exchange any order within 30 days. Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.</description>
+        <category>jewelery</category>
+        <image>https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg</image>
+        <mausac>Vàng kim 24K</mausac>
+        <tonkho>25</tonkho>
+        <rating>
+            <rate>3.9</rate>
+            <count>70</count>
+        </rating>
+    </product>
+    <product>
+        <id>7</id>
+        <title>White Gold Plated Princess</title>
+        <price>9.99</price>
+        <description>Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Quiet red carpet jewelry elegance with simulated diamonds.</description>
+        <category>jewelery</category>
+        <image>https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg</image>
+        <mausac>Bạch kim sáng</mausac>
+        <tonkho>60</tonkho>
+        <rating>
+            <rate>3.0</rate>
+            <count>400</count>
+        </rating>
+    </product>
+    <product>
+        <id>8</id>
+        <title>Pierced Owl Rose Gold Plated Stainless Steel Double</title>
+        <price>10.99</price>
+        <description>Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel. Hypoallergenic and durable.</description>
+        <category>jewelery</category>
+        <image>https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg</image>
+        <mausac>Vàng hồng Rose Gold</mausac>
+        <tonkho>50</tonkho>
+        <rating>
+            <rate>1.9</rate>
+            <count>100</count>
+        </rating>
+    </product>
+    <product>
+        <id>9</id>
+        <title>WD 2TB Elements Portable External Hard Drive - USB 3.0</title>
+        <price>64.0</price>
+        <description>USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity; Compatibility Formatted NTFS for Windows 10, Windows 8.1, Windows 7</description>
+        <category>electronics</category>
+        <image>https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg</image>
+        <mausac>Đen nhám</mausac>
+        <tonkho>95</tonkho>
+        <rating>
+            <rate>3.3</rate>
+            <count>203</count>
+        </rating>
+    </product>
+    <product>
+        <id>10</id>
+        <title>SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s</title>
+        <price>109.0</price>
+        <description>Easy upgrade for faster boot up, shutdown, application load and response. Boosts burst write performance, making it ideal for typical PC workloads</description>
+        <category>electronics</category>
+        <image>https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg</image>
+        <mausac>Đen viền đỏ</mausac>
+        <tonkho>110</tonkho>
+        <rating>
+            <rate>2.9</rate>
+            <count>470</count>
+        </rating>
+    </product>
+    <product>
+        <id>11</id>
+        <title>Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost</title>
+        <price>109.0</price>
+        <description>3D NAND flash are applied to deliver high transfer speeds Remarkable transfer speeds that enable faster bootup and improved overall system performance.</description>
+        <category>electronics</category>
+        <image>https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg</image>
+        <mausac>Đen carbon</mausac>
+        <tonkho>85</tonkho>
+        <rating>
+            <rate>4.8</rate>
+            <count>319</count>
+        </rating>
+    </product>
+    <product>
+        <id>12</id>
+        <title>WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive</title>
+        <price>114.0</price>
+        <description>Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design with high capacity, 3-year manufacturer's limited warranty</description>
+        <category>electronics</category>
+        <image>https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg</image>
+        <mausac>Xanh dương Playstation</mausac>
+        <tonkho>40</tonkho>
+        <rating>
+            <rate>4.8</rate>
+            <count>400</count>
+        </rating>
+    </product>
+    <product>
+        <id>13</id>
+        <title>Acer SB220Q bi 21.5 inches Full HD IPS Ultra-Thin</title>
+        <price>599.0</price>
+        <description>21.5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon free Sync technology. No compatibility for VESA Mount Refresh Rate: 75Hz - Using HDMI port Zero-frame design</description>
+        <category>electronics</category>
+        <image>https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg</image>
+        <mausac>Đen tuyền</mausac>
+        <tonkho>30</tonkho>
+        <rating>
+            <rate>2.9</rate>
+            <count>250</count>
+        </rating>
+    </product>
+    <product>
+        <id>14</id>
+        <title>Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor</title>
+        <price>999.99</price>
+        <description>49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color</description>
+        <category>electronics</category>
+        <image>https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg</image>
+        <mausac>Xám kim loại</mausac>
+        <tonkho>12</tonkho>
+        <rating>
+            <rate>2.2</rate>
+            <count>140</count>
+        </rating>
+    </product>
+    <product>
+        <id>15</id>
+        <title>BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats</title>
+        <price>56.99</price>
+        <description>Note:The Jackets is US standard size, Please choose size as your usual wear Material: 100% Polyester; Detachable Liner Fabric: Warm Fleece. Stand Collar Liner jacket, keep you warm in cold weather.</description>
+        <category>women's clothing</category>
+        <image>https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg</image>
+        <mausac>Tím than</mausac>
+        <tonkho>55</tonkho>
+        <rating>
+            <rate>2.6</rate>
+            <count>235</count>
+        </rating>
+    </product>
+    <product>
+        <id>16</id>
+        <title>Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket</title>
+        <price>29.95</price>
+        <description>100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort / 2 pockets of front, 2-For-One Hooded denim style faux leather jacket</description>
+        <category>women's clothing</category>
+        <image>https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg</image>
+        <mausac>Đen da bóng</mausac>
+        <tonkho>65</tonkho>
+        <rating>
+            <rate>2.9</rate>
+            <count>340</count>
+        </rating>
+    </product>
+    <product>
+        <id>17</id>
+        <title>Rain Jacket Women Windbreaker Striped Climbing Raincoats</title>
+        <price>39.99</price>
+        <description>Lightweight perfect for casual daily, outdoor sports activities like walking, hiking, climbing, running, camping, jogging, cycling, traveling.</description>
+        <category>women's clothing</category>
+        <image>https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg</image>
+        <mausac>Xanh mint sọc trắng</mausac>
+        <tonkho>70</tonkho>
+        <rating>
+            <rate>3.8</rate>
+            <count>679</count>
+        </rating>
+    </product>
+    <product>
+        <id>18</id>
+        <title>MBJ Women's Solid Short Sleeve Boat Neck V Neck T-Shirt</title>
+        <price>9.85</price>
+        <description>95% RAYON 5% SPANDEX, Made in USA or Imported, Do Not Bleach, Lightweight fabric with great stretch for comfort, Ribbed on sleeves and neckline / Double stitching on bottom hem</description>
+        <category>women's clothing</category>
+        <image>https://fakestoreapi.com/img/71z3kpMAYUL._AC_UY879_.jpg</image>
+        <mausac>Trắng tinh</mausac>
+        <tonkho>140</tonkho>
+        <rating>
+            <rate>4.7</rate>
+            <count>130</count>
+        </rating>
+    </product>
+    <product>
+        <id>19</id>
+        <title>Opna Women's Short Sleeve Moisture</title>
+        <price>7.95</price>
+        <description>100% Polyester, Machine wash, 100% cationic polyester interlock, Machine Wash and Pre Shrunk for a Great Fit, Lightweight, roomy and highly breathable with moisture wicking fabric</description>
+        <category>women's clothing</category>
+        <image>https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg</image>
+        <mausac>Đỏ san hô</mausac>
+        <tonkho>90</tonkho>
+        <rating>
+            <rate>4.5</rate>
+            <count>146</count>
+        </rating>
+    </product>
+    <product>
+        <id>20</id>
+        <title>DANVOUY Womens T Shirt Casual Cotton Short</title>
+        <price>12.99</price>
+        <description>95%Cotton, 5%Spandex, Features: Casual, Short Sleeve, Letter Print,V-Neck,Fashion Tees The fabric is soft and has some stretch. Occasion: Casual/Office/Beach/School/Home/Street.</description>
+        <category>women's clothing</category>
+        <image>https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg</image>
+        <mausac>Tím cà</mausac>
+        <tonkho>75</tonkho>
+        <rating>
+            <rate>3.6</rate>
+            <count>145</count>
+        </rating>
+    </product>
+</products>

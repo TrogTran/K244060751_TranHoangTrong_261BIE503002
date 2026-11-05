@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa Hàng Thương Mại Điện Tử - K244060751 Trần Hoàng Trọng - K24406</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- THÔNG BÁO TOAST CONTAINER -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- HEADER & NAVBAR -->
+    <header>
+        <div class="header-top">
+            <a href="index.html" class="brand-logo">
+                <span>🛒</span> MYSTORE VN
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Trang chủ</a></li>
+                    <li><a href="#products">Sản phẩm</a></li>
+                    <li><a href="admin.html">Quản trị viên (Admin)</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- FORM TÌM KIẾM Ở TRÊN CÙNG (CÂU 2: CÓ HTML5 VALIDATION) -->
+        <div class="search-section">
+            <form class="search-form" id="searchForm" action="#" method="get">
+                <input 
+                    type="search" 
+                    class="search-input" 
+                    id="searchInput" 
+                    name="q" 
+                    placeholder="Tìm kiếm sản phẩm theo tên, danh mục hoặc mô tả..."
+                    required
+                    minlength="2"
+                    title="Vui lòng nhập tối thiểu 2 ký tự để tìm kiếm"
+                >
+                <button type="submit" class="btn-search">Tìm kiếm</button>
+            </form>
+        </div>
+    </header>
+
+    <!-- KHU VỰC NỘI DUNG CHÍNH (CONTAINER) -->
+    <div class="container" id="products">
+
+        <!-- THANH BÊN ASIDE CHỨA FORM TÌM KIẾM NÂNG CAO (CÂU 2) -->
+        <aside>
+            <h3>Tìm kiếm nâng cao</h3>
+            
+            <form id="advancedSearchForm" class="advanced-search-form">
+                <!-- Dropdown danh mục -->
+                <div class="filter-group">
+                    <label for="categorySelect">Danh mục sản phẩm</label>
+                    <select class="category-select" id="categorySelect" name="category">
+                        <option value="all">Tất cả danh mục</option>
+                    </select>
+                </div>
+
+                <!-- Khoảng giá (HTML5 Validation: type="number", min="0") -->
+                <div class="filter-group">
+                    <label>Khoảng giá ($)</label>
+                    <div style="display: flex; gap: 8px;">
+                        <input type="number" id="minPrice" name="minPrice" placeholder="Từ" min="0" step="1">
+                        <input type="number" id="maxPrice" name="maxPrice" placeholder="Đến" min="0" step="1">
+                    </div>
+                </div>
+
+                <!-- Màu sắc -->
+                <div class="filter-group">
+                    <label for="colorSelect">Màu sắc</label>
+                    <select id="colorSelect" name="color" class="category-select">
+                        <option value="all">Tất cả màu</option>
+                        <option value="Xanh">Xanh</option>
+                        <option value="Đen">Đen</option>
+                        <option value="Trắng">Trắng</option>
+                        <option value="Đỏ">Đỏ</option>
+                        <option value="Vàng">Vàng</option>
+                        <option value="Bạc">Bạc</option>
+                    </select>
+                </div>
+
+                <!-- Rating (HTML5 Validation: required) -->
+                <div class="filter-group">
+                    <label for="ratingSelect">Đánh giá tối thiểu</label>
+                    <select id="ratingSelect" name="rating" class="category-select" required>
+                        <option value="0">Tất cả đánh giá</option>
+                        <option value="4">Từ 4 sao trở lên</option>
+                        <option value="3">Từ 3 sao trở lên</option>
+                        <option value="2">Từ 2 sao trở lên</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-search" style="width: 100%; margin-top: 10px;">Áp dụng bộ lọc</button>
+            </form>
+            
+            <div class="aside-stats" style="margin-top: 20px;">
+                <p><b>Cam kết chất lượng:</b></p>
+                <p>✓ Đổi trả miễn phí 30 ngày</p>
+                <p>✓ Giao hàng hỏa tốc 2 giờ</p>
+                <p>✓ Xem review chi tiết từ XML</p>
+                <p style="margin-top: 10px; border-top: 1px dashed #ccc; padding-top: 8px;"><b>Mã đề:</b> BW08</p>
+            </div>
+        </aside>
+
+        <!-- SECTION: DANH SÁCH SẢN PHẨM (CSS GRID RESPONSIVE) -->
+        <section class="products-section">
+            <div class="section-header">
+                <h2 class="section-title">Danh Sách Sản Phẩm Nổi Bật</h2>
+                <span class="product-count" id="productCount">Đang nạp dữ liệu...</span>
+            </div>
+
+            <!-- CSS GRID CONTAINER (GẮN EVENT DELEGATION TẠI ĐÂY) -->
+            <div class="products-grid" id="productGrid">
+                <!-- SKELETON LOADING BAN ĐẦU (CÂU 3: BẮT BUỘC) -->
+                <div class="skeleton-card">
+                    <div class="skeleton-box skeleton-img"></div>
+                    <div class="skeleton-box skeleton-badge"></div>
+                    <div class="skeleton-box skeleton-title"></div>
+                    <div class="skeleton-box skeleton-title-2"></div>
+                    <div class="skeleton-box skeleton-price"></div>
+                    <div class="skeleton-actions">
+                        <div class="skeleton-box skeleton-btn"></div>
+                        <div class="skeleton-box skeleton-btn"></div>
+                    </div>
+                </div>
+                <div class="skeleton-card">
+                    <div class="skeleton-box skeleton-img"></div>
+                    <div class="skeleton-box skeleton-badge"></div>
+                    <div class="skeleton-box skeleton-title"></div>
+                    <div class="skeleton-box skeleton-title-2"></div>
+                    <div class="skeleton-box skeleton-price"></div>
+                    <div class="skeleton-actions">
+                        <div class="skeleton-box skeleton-btn"></div>
+                        <div class="skeleton-box skeleton-btn"></div>
+                    </div>
+                </div>
+                <div class="skeleton-card">
+                    <div class="skeleton-box skeleton-img"></div>
+                    <div class="skeleton-box skeleton-badge"></div>
+                    <div class="skeleton-box skeleton-title"></div>
+                    <div class="skeleton-box skeleton-title-2"></div>
+                    <div class="skeleton-box skeleton-price"></div>
+                    <div class="skeleton-actions">
+                        <div class="skeleton-box skeleton-btn"></div>
+                        <div class="skeleton-box skeleton-btn"></div>
+                    </div>
+                </div>
+                <div class="skeleton-card">
+                    <div class="skeleton-box skeleton-img"></div>
+                    <div class="skeleton-box skeleton-badge"></div>
+                    <div class="skeleton-box skeleton-title"></div>
+                    <div class="skeleton-box skeleton-title-2"></div>
+                    <div class="skeleton-box skeleton-price"></div>
+                    <div class="skeleton-actions">
+                        <div class="skeleton-box skeleton-btn"></div>
+                        <div class="skeleton-box skeleton-btn"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- MINI-CART NỔI Ở GÓC MÀN HÌNH (POSITION ABSOLUTE & Z-INDEX: 1000) -->
+    <div class="mini-cart">
+        <button class="mini-cart-btn" id="miniCartBtn" aria-label="Xem giỏ hàng">
+            <span class="cart-icon">🛒</span>
+            <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+
+        <div class="mini-cart-panel" id="miniCartPanel">
+            <div class="mini-cart-header">
+                <span>Giỏ hàng của bạn</span>
+                <span style="font-size: 13px; font-weight: normal;">(Tạm tính)</span>
+            </div>
+            <ul class="mini-cart-items" id="miniCartList">
+                <li style="text-align:center; color:#888; padding: 20px 0;">Giỏ hàng trống</li>
+            </ul>
+            <div class="mini-cart-footer">
+                <div class="mini-cart-total">
+                    <span>Tổng tiền:</span>
+                    <span id="miniCartTotal" style="color: #d32f2f;">$0.00</span>
+                </div>
+                <button class="btn-checkout" id="btnOpenCheckout">Tiến hành Thanh toán</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL XEM NHANH SẢN PHẨM (QUICK VIEW) & GIÁ VÀNG DÂN TRÍ -->
+    <div class="modal-overlay" id="quickViewModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-title">Xem Nhanh Sản Phẩm</span>
+                <button class="btn-close-modal" aria-label="Đóng">&times;</button>
+            </div>
+            <div class="modal-body" id="quickViewBody">
+                <!-- Nội dung được điền động bằng JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL CHI TIẾT ĐÁNH GIÁ (RATING DETAIL - CÂU 5) -->
+    <div class="modal-overlay" id="ratingDetailModal">
+        <div class="modal-content" style="max-width: 520px;">
+            <div class="modal-header">
+                <span class="modal-title" id="ratingModalTitle">Đánh Giá Từ Khách Hàng (XML)</span>
+                <button class="btn-close-modal" aria-label="Đóng">&times;</button>
+            </div>
+            <div class="modal-body" id="ratingModalBody">
+                <!-- Danh sách review đọc từ reviews.xml -->
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL THANH TOÁN (CHECKOUT FORM VỚI REGEX VALIDATION) -->
+    <div class="modal-overlay" id="checkoutModal">
+        <div class="modal-content" style="max-width: 480px;">
+            <div class="modal-header">
+                <span class="modal-title">Thông Tin Thanh Toán</span>
+                <button class="btn-close-modal" aria-label="Đóng">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p style="margin-bottom: 14px; font-size: 14px; color: #555;">
+                    Tổng số tiền thanh toán: <b id="checkoutTotalSummary" style="color: #d32f2f; font-size: 18px;">$0.00</b>
+                </p>
+                <form id="checkoutForm" novalidate>
+                    <div class="checkout-form-group">
+                        <label for="txtCustomerName">Họ và tên khách hàng (*)</label>
+                        <input type="text" id="txtCustomerName" placeholder="Ví dụ: Trần Hoàng Trọng">
+                        <div class="error-text" id="errorName"></div>
+                    </div>
+                    <div class="checkout-form-group">
+                        <label for="txtCustomerEmail">Địa chỉ Email (*)</label>
+                        <input type="email" id="txtCustomerEmail" placeholder="Ví dụ: name@gmail.com">
+                        <div class="error-text" id="errorEmail"></div>
+                    </div>
+                    <div class="checkout-form-group">
+                        <label for="txtCustomerPhone">Số điện thoại (*)</label>
+                        <input type="tel" id="txtCustomerPhone" placeholder="Ví dụ: 0912345678 hoặc +84912345678">
+                        <div class="error-text" id="errorPhone"></div>
+                    </div>
+                    <div style="margin-top: 20px;">
+                        <button type="submit" class="btn-checkout" style="padding: 12px;">Xác nhận đặt hàng</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER Ở TẤT CẢ CÁC TRANG (CHÍNH XÁC THEO YÊU CẦU ĐỀ BÀI) -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>VỀ CHÚNG TÔI</h4>
+                <p><b>Hệ thống Bán Hàng Trực Tuyến MyStore</b></p>
+                <p><b>Địa chỉ:</b> 280 An Dương Vương, Phường 4, Quận 5, TP. Hồ Chí Minh</p>
+                <p><b>Hotline:</b> 1900 6868 - (028) 3835 4409</p>
+                <p><b>Email hỗ trợ:</b> support@mystore.vn</p>
+            </div>
+            <div class="footer-col">
+                <h4>THÔNG TIN SINH VIÊN & BÀI THI</h4>
+                <p><b>Sinh viên thực hiện:</b> Trần Hoàng Trọng - MSSV: K244060751 - Lớp: K24406 - Mã đề: BW08</p>
+                <p><b>Môn học:</b> Phát triển Web Kinh Doanh</p>
+                <p><b>Công nghệ:</b> HTML5 Semantic, CSS Grid, Skeleton Loading, DOMParser XML, Event Delegation, Regex LocalStorage.</p>
+            </div>
+            <div class="footer-col">
+                <h4>TIỆN ÍCH THỜI TIẾT TRỰC TUYẾN</h4>
+                <div class="weather-widget" id="weatherWidget">
+                    Đang nạp dữ liệu thời tiết Hà Nội...
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            Sinh viên thực hiện: Trần Hoàng Trọng - MSSV: K244060751 - Lớp: K24406 - Mã đề: BW08
+        </div>
+    </footer>
+
+    <!-- SCRIPT CHÍNH -->
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reviews>
+    <review>
+        <product_id>1</product_id>
+        <customer_name>Nguyễn Văn Hùng</customer_name>
+        <rating>5</rating>
+        <comment>Balo rất bền, đựng vừa laptop 15.6 inch, đường chỉ may kỹ càng.</comment>
+    </review>
+    <review>
+        <product_id>1</product_id>
+        <customer_name>Trần Thị Thu</customer_name>
+        <rating>4</rating>
+        <comment>Màu sắc đẹp y như hình, vải chống thấm nước ổn định.</comment>
+    </review>
+    <review>
+        <product_id>1</product_id>
+        <customer_name>Lê Hoàng Nam</customer_name>
+        <rating>5</rating>
+        <comment>Giao hàng nhanh, quai đeo êm ái đi phượt rất tiện.</comment>
+    </review>
+    <review>
+        <product_id>2</product_id>
+        <customer_name>Đặng Minh Quân</customer_name>
+        <rating>4</rating>
+        <comment>Áo mặc thoáng mát, vải cotton co giãn tốt, form slim fit ôm vừa vặn.</comment>
+    </review>
+    <review>
+        <product_id>2</product_id>
+        <customer_name>Võ Văn Hậu</customer_name>
+        <rating>4</rating>
+        <comment>Giá hợp lý, chất lượng vải tốt trong tầm giá.</comment>
+    </review>
+    <review>
+        <product_id>3</product_id>
+        <customer_name>Phạm Quang Hải</customer_name>
+        <rating>5</rating>
+        <comment>Áo khoác giữ ấm cực tốt, túi áo tiện lợi, phối đồ rất ngầu.</comment>
+    </review>
+    <review>
+        <product_id>3</product_id>
+        <customer_name>Trần Đình Trọng</customer_name>
+        <rating>5</rating>
+        <comment>Chất vải dày dặn, cúc áo và khóa kéo mạ đồng xịn xò.</comment>
+    </review>
+    <review>
+        <product_id>4</product_id>
+        <customer_name>Nguyễn Đức Chiến</customer_name>
+        <rating>3</rating>
+        <comment>Áo hơi mỏng một chút so với hình, mặc mùa hè thì thoáng.</comment>
+    </review>
+    <review>
+        <product_id>5</product_id>
+        <customer_name>Lâm Bảo Châu</customer_name>
+        <rating>5</rating>
+        <comment>Vòng tay tinh xảo, chi tiết đầu rồng chạm khắc đỉnh cao.</comment>
+    </review>
+    <review>
+        <product_id>5</product_id>
+        <customer_name>Hoàng Thúy Vy</customer_name>
+        <rating>5</rating>
+        <comment>Rất sang trọng, đóng gói hộp nhung rất cao cấp.</comment>
+    </review>
+    <review>
+        <product_id>6</product_id>
+        <customer_name>Mai Phương Thúy</customer_name>
+        <rating>4</rating>
+        <comment>Vàng 24K sáng bóng, đeo vừa tay, rất ưng ý.</comment>
+    </review>
+    <review>
+        <product_id>7</product_id>
+        <customer_name>Đỗ Mỹ Linh</customer_name>
+        <rating>3</rating>
+        <comment>Nhẫn đẹp, hạt đá đính cẩn thận nhưng hơi nhẹ tay.</comment>
+    </review>
+    <review>
+        <product_id>8</product_id>
+        <customer_name>Trần Tiểu Vy</customer_name>
+        <rating>4</rating>
+        <comment>Khuyên tai titan vàng hồng đeo không bị dị ứng, sáng đẹp.</comment>
+    </review>
+    <review>
+        <product_id>9</product_id>
+        <customer_name>Nguyễn Hữu Thắng</customer_name>
+        <rating>4</rating>
+        <comment>Ổ cứng truyền dữ liệu nhanh, cắm là nhận ngay trên Windows 11.</comment>
+    </review>
+    <review>
+        <product_id>9</product_id>
+        <customer_name>Trịnh Quốc Bảo</customer_name>
+        <rating>5</rating>
+        <comment>Dung lượng 2TB thoải mái lưu game và phim 4K.</comment>
+    </review>
+    <review>
+        <product_id>10</product_id>
+        <customer_name>Lê Thành An</customer_name>
+        <rating>4</rating>
+        <comment>SSD SanDisk gắn vào máy bàn khởi động Windows mất 5 giây.</comment>
+    </review>
+    <review>
+        <product_id>11</product_id>
+        <customer_name>Bùi Tiến Dũng</customer_name>
+        <rating>5</rating>
+        <comment>Tốc độ đọc ghi chuẩn 3D NAND, nhiệt độ mát mẻ.</comment>
+    </review>
+    <review>
+        <product_id>12</product_id>
+        <customer_name>Vũ Văn Thanh</customer_name>
+        <rating>5</rating>
+        <comment>Cắm PS4 nhận ngay 4TB, load game mượt mà.</comment>
+    </review>
+    <review>
+        <product_id>13</product_id>
+        <customer_name>Nguyễn Phong Hồng Duy</customer_name>
+        <rating>4</rating>
+        <comment>Màn hình IPS viền siêu mỏng, tần số 75Hz chơi game ổn.</comment>
+    </review>
+    <review>
+        <product_id>14</product_id>
+        <customer_name>Phan Văn Đức</customer_name>
+        <rating>5</rating>
+        <comment>Màn hình cong 49 inch siêu rộng, làm việc đa nhiệm tuyệt đỉnh.</comment>
+    </review>
+    <review>
+        <product_id>15</product_id>
+        <customer_name>Nguyễn Thị Bích Thùy</customer_name>
+        <rating>4</rating>
+        <comment>Áo khoác 3 trong 1 chống tuyết ấm áp, đi du lịch Sapa rất thích.</comment>
+    </review>
+    <review>
+        <product_id>16</product_id>
+        <customer_name>Huỳnh Như</customer_name>
+        <rating>4</rating>
+        <comment>Chất da PU mềm, có nón nỉ tháo rời tiện lợi.</comment>
+    </review>
+    <review>
+        <product_id>17</product_id>
+        <customer_name>Trần Thị Thùy Trang</customer_name>
+        <rating>4</rating>
+        <comment>Áo gió đi mưa nhẹ tốt, sọc kẻ trẻ trung năng động.</comment>
+    </review>
+    <review>
+        <product_id>18</product_id>
+        <customer_name>Phạm Hải Yến</customer_name>
+        <rating>5</rating>
+        <comment>Áo thun cổ tim cơ bản, chất co giãn mặc êm ái.</comment>
+    </review>
+    <review>
+        <product_id>19</product_id>
+        <customer_name>Chương Thị Kiều</customer_name>
+        <rating>5</rating>
+        <comment>Vải thể thao thoát ẩm nhanh, màu đỏ tươi tắn.</comment>
+    </review>
+    <review>
+        <product_id>20</product_id>
+        <customer_name>Nguyễn Thị Tuyết Dung</customer_name>
+        <rating>4</rating>
+        <comment>Áo thun cộc tay in chữ cá tính, giặt không bị xù lông.</comment>
+    </review>
+</reviews>
+

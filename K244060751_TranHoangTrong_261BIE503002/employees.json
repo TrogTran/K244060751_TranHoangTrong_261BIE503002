@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "username": "admin",
+        "password": "admin123",
+        "hoten": "Trần Hoàng Trọng",
+        "role": "admin",
+        "email": "trong.k244060751@st.uel.edu.vn",
+        "sdt": "0912345678"
+    },
+    {
+        "id": 2,
+        "username": "staff01",
+        "password": "staff123",
+        "hoten": "Nguyễn Văn An",
+        "role": "staff",
+        "email": "an.nguyen@example.com",
+        "sdt": "0987654321"
+    },
+    {
+        "id": 3,
+        "username": "staff02",
+        "password": "staff123",
+        "hoten": "Trần Thị Bích",
+        "role": "staff",
+        "email": "bich.tran@example.com",
+        "sdt": "0978123456"
+    }
+]

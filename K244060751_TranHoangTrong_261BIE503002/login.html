@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập Quản Trị Viên - K244060751 Trần Hoàng Trọng - K24406</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+
+    <!-- THÔNG BÁO TOAST CONTAINER -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- HEADER & NAVBAR -->
+    <header>
+        <div class="header-top">
+            <a href="index.html" class="brand-logo">
+                <span>🛒</span> MYSTORE VN
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Về Trang Bán Hàng</a></li>
+                    <li><a href="login.html" class="active">Đăng Nhập Quản Trị</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- KHU VỰC ĐĂNG NHẬP (CENTER BOX) -->
+    <main style="flex: 1; display: flex; justify-content: center; align-items: center; padding: 40px 16px;">
+        <div style="background: #ffffff; border-radius: 10px; box-shadow: 0 8px 24px rgba(0,0,0,0.12); width: 100%; max-width: 420px; overflow: hidden; border: 1px solid #e0e0e0;">
+            <div style="background: #1a237e; color: #ffffff; padding: 24px; text-align: center;">
+                <span style="font-size: 36px;">🔐</span>
+                <h2 style="font-size: 20px; margin-top: 8px;">Đăng Nhập Quản Trị</h2>
+                <p style="font-size: 13px; color: #ffd54f; margin-top: 4px;">Hệ Thống Quản Trị Viên MyStore</p>
+            </div>
+
+            <div style="padding: 24px;">
+                <div style="background: #e8eaf6; padding: 10px 14px; border-radius: 6px; font-size: 13px; color: #283593; margin-bottom: 18px; line-height: 1.5;">
+                    💡 <b>Tài khoản mặc định:</b><br>
+                    • Tên đăng nhập: <b>admin</b><br>
+                    • Mật khẩu: <b>admin123</b>
+                </div>
+
+                <form id="adminLoginForm" novalidate>
+                    <div class="checkout-form-group">
+                        <label for="txtAdminUser">Tên đăng nhập (*)</label>
+                        <input type="text" id="txtAdminUser" placeholder="Nhập username (admin)" required>
+                    </div>
+
+                    <div class="checkout-form-group">
+                        <label for="txtAdminPass">Mật khẩu (*)</label>
+                        <input type="password" id="txtAdminPass" placeholder="Nhập password (admin123)" required>
+                    </div>
+
+                    <div id="loginErrorMsg" style="color: #d32f2f; font-size: 13px; margin-bottom: 14px; display: none; font-weight: 600;">
+                        ⚠ Tên đăng nhập hoặc mật khẩu không chính xác!
+                    </div>
+
+                    <button type="submit" class="btn-checkout" style="padding: 12px; font-size: 15px; margin-top: 6px;">
+                        Đăng Nhập Quản Trị
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER Ở TẤT CẢ CÁC TRANG -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>VỀ CHÚNG TÔI</h4>
+                <p><b>Hệ thống Bán Hàng Trực Tuyến MyStore (Admin Portal)</b></p>
+                <p><b>Địa chỉ:</b> 280 An Dương Vương, Phường 4, Quận 5, TP. Hồ Chí Minh</p>
+                <p><b>Hotline:</b> 1900 6868 - (028) 3835 4409</p>
+            </div>
+            <div class="footer-col">
+                <h4>THÔNG TIN SINH VIÊN & BÀI THI</h4>
+                <p><b>Sinh viên thực hiện:</b> Trần Hoàng Trọng - MSSV: K244060751 - Lớp: K24406 - Mã đề: BW08</p>
+                <p><b>Môn học:</b> Phát triển Web Kinh Doanh</p>
+                <p><b>Công nghệ:</b> HTML5 Semantic, CSS Grid, JavaScript ES6+, LocalStorage, DOMParser XML.</p>
+            </div>
+            <div class="footer-col">
+                <h4>TIỆN ÍCH THỜI TIẾT TRỰC TUYẾN</h4>
+                <div class="weather-widget" id="weatherWidgetLogin">
+                    Đang nạp dữ liệu thời tiết Hà Nội...
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 MyStore. Sinh viên thực hiện: Trần Hoàng Trọng - MSSV: K244060751 - Lớp: K24406 - Mã đề: BW08.
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Nếu đã đăng nhập, tự động chuyển vào admin.html
+            if (localStorage.getItem("adminLoggedIn") === "true") {
+                window.location.href = "admin.html";
+                return;
+            }
+
+            var form = document.getElementById("adminLoginForm");
+            var errorMsg = document.getElementById("loginErrorMsg");
+
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+                var u = document.getElementById("txtAdminUser").value.trim();
+                var p = document.getElementById("txtAdminPass").value.trim();
+
+                if (u === "admin" && p === "admin123") {
+                    localStorage.setItem("adminLoggedIn", "true");
+                    errorMsg.style.display = "none";
+                    window.location.href = "admin.html";
+                } else {
+                    errorMsg.style.display = "block";
+                }
+            });
+
+            // Widget thời tiết
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "https://eth.cnnd.vn/api-weather.htm", true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    var el = document.getElementById("weatherWidgetLogin");
+                    if (el) {
+                        if (xhr.status === 200) {
+                            try {
+                                var data = JSON.parse(xhr.responseText);
+                                var hnData = data.find(function (i) {
+                                    return i.location && i.location.indexOf("Hà Nội") !== -1;
+                                });
+                                if (hnData) {
+                                    el.innerHTML = "⛅ Thời tiết Hà Nội: <b>" + (hnData.temperature || "26") + "°C</b> - " + (hnData.status || "Nắng nhẹ");
+                                    return;
+                                }
+                            } catch (e) {}
+                        }
+                        el.innerHTML = "⛅ Thời tiết Hà Nội: <b>26°C</b> - Trời có mây, nắng nhẹ";
+                    }
+                }
+            };
+            xhr.send();
+        });
+    </script>
+</body>
+</html>
+

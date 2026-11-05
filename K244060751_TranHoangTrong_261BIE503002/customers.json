@@ -1,0 +1,38 @@
+[
+    {
+        "id": "KH001",
+        "hoten": "Trần Hoàng Trọng",
+        "email": "trong.k244060751@st.uel.edu.vn",
+        "sdt": "0912345678",
+        "diachi": "280 An Dương Vương, Phường 4, Quận 5, TP.HCM",
+        "role": "admin",
+        "ngaytao": "2026-01-15T08:30:00"
+    },
+    {
+        "id": "KH002",
+        "hoten": "Nguyễn Thị Mai",
+        "email": "mai.nguyen@example.com",
+        "sdt": "0987654321",
+        "diachi": "45 Lê Lợi, Quận 1, TP.HCM",
+        "role": "user",
+        "ngaytao": "2026-02-20T10:15:00"
+    },
+    {
+        "id": "KH003",
+        "hoten": "Lê Hoàng Long",
+        "email": "long.le@example.com",
+        "sdt": "0903123456",
+        "diachi": "78 Hoàng Diệu, Hải Châu, Đà Nẵng",
+        "role": "user",
+        "ngaytao": "2026-03-05T14:45:00"
+    },
+    {
+        "id": "KH004",
+        "hoten": "Phạm Thu Hương",
+        "email": "huong.pham@example.com",
+        "sdt": "0978999888",
+        "diachi": "12 Tràng Thi, Hoàn Kiếm, Hà Nội",
+        "role": "user",
+        "ngaytao": "2026-04-12T09:00:00"
+    }
+]
